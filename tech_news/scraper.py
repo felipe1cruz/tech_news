@@ -1,6 +1,22 @@
+import requests
+from time import sleep
+# from parsel import Selector
+# from urllib.parse import urlparse
+# import re
+
+
 # Requisito 1
-def fetch(url):
-    """Seu código deve vir aqui"""
+def fetch(url: str, wait: int = 3, user_agent="Fake user-agent") -> str:
+    headers = {"user-agent": user_agent}
+    try:
+        response = requests.get(url, headers=headers, timeout=wait)
+        sleep(1)
+        response.raise_for_status()
+    except (requests.HTTPError, requests.ReadTimeout):
+        return None
+    else:
+        sleep(1)
+        return response.text
 
 
 # Requisito 2
