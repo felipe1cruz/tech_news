@@ -30,10 +30,6 @@ def search_by_date(date):
     return data
 
 
-
-
-
-
 # Requisito 9
 def search_by_category(category):
     """Seu código deve vir aqui"""
