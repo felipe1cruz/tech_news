@@ -1,4 +1,4 @@
-# Inventory Report ( Relatórios de Estoque )
+# Tech News
 
 ## Sobre
 Projeto desenvolvido em Python, utilizando raspagem de dados, fazendo consultas em notícias no blog da trybe. 
